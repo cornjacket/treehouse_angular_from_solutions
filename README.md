@@ -41,7 +41,7 @@ Starting the server from a command prompt is:
 
 *******************************************************************************************************
 
-At first I modified the input to the $watch function and later removed both watchers as I could not see a reason that they were needed since the objects being watched were never changing during the program. The use of the watcher may be a preferred usage pattern or it may be insurance against future edits to the code that may happen.
+At first I modified the input to the $watch function and later removed both watchers as I could not see a reason that they were needed since the objects being watched were never changing in the specific controller. The use of the watcher may be a preferred usage pattern or it may be insurance against future edits to the code that potentially could change the user object.
 
     // DRT - this must be called at least once. not sure why there was a watch surrounding this since
     // questions does not change, and surveyAnswers changing doesnt require new questions
