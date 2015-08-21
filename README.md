@@ -15,6 +15,13 @@ A found that watching this course at 75% was the only way to understand the mate
 
 I would highly recommend taking the effort to go through this tutorial and trying to code the app from first watching the video alone and then going back and reviewing the solutions that weren't explained in the video. I initially came up with a solution that worked but was clumsy. This clumsy solution did allow me to understand scopes better. The instructor solutions showed me the Angular way to structure this app.
 
+Take Aways:
+
+1. debug display info, a separate controller just to display this.
+2. how the instrutor works out the view but spends no time trying to make it pretty, just functional. Focus on code.
+3. how each controller gets the User so that it has a local reference to a persistent data structure, the user object
+4. how the data is automatically inserted into the object/hash data stucture via the ng-model reference.
+
 Notes:
 
 I made some annotations inside app.js (and below) explaining some things about the code that were not obvious to me. I also refactored some of the code to see if some code was truly necessary. 
@@ -24,6 +31,9 @@ Since the barChart directive below uses an external file, Chrome was giving me a
 http://stackoverflow.com/questions/27742070/angularjs-error-cross-origin-requests-are-only-supported-for-protocol-schemes
 
 So I took the advice and ran node/npm with the http-server to serve the application. I did find that I had to have Chrome go to http://localhost:8080 instead of http://0.0.0.0:8080 per the http-server instructions.
+
+Starting the server from a command prompt is:
+> http-server C:\location\to\app
 
   .directive('barChart', function () {
     return {
